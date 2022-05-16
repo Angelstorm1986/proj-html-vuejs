@@ -1,4 +1,15 @@
+// BACKGROUNDS
 $bg-standard: #ffffff;
-$bg-button-standard: #fed23f;
 $bg-footer: #6b6868;
 $bg-footer-bottom: #1e1e1e;
+
+// BUTTONS
+$bg-button-standard: #fed23f;
+$bg-button-secondary: #6b6868;
+
+// TEXT
+$text-color: #6b6868;
+
+// MIXINS
+
+@import './mixins';

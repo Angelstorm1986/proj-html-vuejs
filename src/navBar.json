@@ -1,0 +1,22 @@
+[
+    {
+        "text": "home",
+        "active": true
+    },
+    {
+        "text": "about",
+        "active": false
+    },
+    {
+        "text": "services",
+        "active": false
+    },
+    {
+        "text": "work",
+        "active": false
+    },
+    {
+        "text": "articles",
+        "active": false
+    }
+]
