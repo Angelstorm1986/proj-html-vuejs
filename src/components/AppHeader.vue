@@ -71,12 +71,9 @@ header{
             }
         }
         .standard-button{
+            @include button-layout;
             background-color: $bg-button-standard;
             color: $text-color;
-            text-transform: uppercase;
-            font-weight: bold;
-            padding: 5px 20px;
-            margin: 0 30px;
         }
     }
 }
