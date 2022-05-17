@@ -1,15 +1,18 @@
 <template>
-  <main>
-      <app-jumbotron/>
-  </main>
+    <main>
+        <app-jumbotron/>
+        <app-partners/>
+    </main>
 </template>
 
 <script>
 import AppJumbotron from './AppJumbotron.vue'
+import AppPartners from './AppPartners.vue'
 export default {
     name: 'AppMain',
     components:{
-        AppJumbotron
+        AppJumbotron,
+        AppPartners
     }
 }
 </script>
