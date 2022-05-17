@@ -17,7 +17,62 @@
             </div>
         </div>
         <div class="mid-footer">
-
+            <div class="mid-footer-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../assets/images/footer-logo.png" alt="Avada Constructions Logo">
+                        <p>We ara specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>
+                        <button>learn more</button>
+                    </div>
+                    <div class="col-3">
+                        <div class="post">
+                            <div class="post__header">
+                                <h6>latest tweets</h6>
+                                <div class="post-meta">                    
+                                    <div class="post-meta__icon">
+                                        <img class="profile-pic" src="../assets/images/3a74ce3d0532b7773b174c45ca3bd05a_normal.png" alt="Logo post">
+                                        <div class="post-meta__data">
+                                            <div class="post-meta__author">ThemeFusion</div>
+                                            <div class="post-meta__profile">@Theme_Fusion</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post__text">Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.</div>
+                            <div class="post__image">
+                                <img src="../assets/images/wpengine-homepage.jpg" alt="WP Engine">
+                            </div>
+                            <div class="post__footer">
+                                <div class="post__footer-icons">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                </div>
+                                <div class="post__footer-time">
+                                    <p>22h</p>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="mid-footer-contact col-3">
+                        <h6>contact us today</h6>
+                        <div class="contact">
+                            <p><i class="fa-solid fa-globe"></i>&nbsp;Corporate Location<br>1600 Amphitheatre Parkway<br>London WC1 1BA</p>
+                            <p><i class="fa-solid fa-house-chimney"></i>&nbsp;Residential Location<br>9521 Broadsberry Avenue<br>Paddington RC7 9ZA</p>
+                            <p><i class="fa-solid fa-phone-flip"></i>&nbsp;1.800.458.556 / 1.800.532.2112</p>
+                            <p><i class="fa-regular fa-envelope"></i>&nbsp;info@yourdomain.com</p>
+                            <p><i class="fa-regular fa-clock"></i>&nbsp;Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p><i class="fa-regular fa-clock"></i>&nbsp;Saturday - Sunday: 9:00 AM - 12:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h6>find us</h6>
+                        <img src="../assets/images/2022-05-17_14-51.png" alt="Avada Location">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="bottom-footer">
             <div class="copyright">
@@ -82,6 +137,79 @@ export default {
             color: $text-color-title;
             font-size: 10px;
             margin-top: 10px;
+        }
+    }
+}
+
+.mid-footer{
+    background-color: $bg-footer;
+    padding: 50px 0;
+    .mid-footer-container{
+        width: 90%;
+        margin: 0 auto;
+        color: $text-color;
+        button{
+            @include button-layout;
+            background-color: $bg-button-standard;
+            color: $text-color;
+            margin: 0;
+        }
+        h6{
+            text-transform: uppercase;
+            color: $text-color-alternative;
+            margin-bottom: 30px;
+        }
+        .post{
+            color: $text-color-title;
+            .post-meta {
+                display: flex;
+                justify-content: space-between;
+                .post-meta__icon {
+                    display: flex;
+                    
+                    .profile-pic {
+                        border-radius: 50%;
+                        max-width: 60px;
+                    }
+                    .post-meta__data {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .post-meta__author {
+                            font-weight: bold;
+                        }
+
+                        .post-meta__profile {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .fa-twitter{
+                    color: $text-color;
+                }
+            }
+            .post__text {
+                padding-left: 50px;
+            }
+            .post__image {
+                padding-left: 50px;
+                img {
+                    width: 100%;
+                }
+            }
+            .post__footer{
+                padding-left: 50px;
+                display: flex;
+                justify-content: space-between;
+                color: $text-color;
+            }
+        }
+        .contact{
+            padding: 0 25px;
+            color: $text-color;
+            p i{
+                margin-left: -25px;
+            }
         }
     }
 }
