@@ -5,7 +5,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio ipsa veniam ratione sit tempore asperiores assumenda aliquam perferendis beatae.</p>
         <div class="images-container">
             <div class="row row-cols-5" v-for="(item, index) in partners" :key="index">
-                <img :src="'.images/partners/' + item.image" :alt="item.title">
+                <img :src="'./images/partners/' + item.image" :alt="item.title">
             </div>
         </div>  
     </div>
@@ -27,7 +27,7 @@ export default {
 @import '../style/vars';
 .partners{
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     h4{
         text-transform: uppercase;
     }
@@ -41,6 +41,18 @@ export default {
     p{
         width: 80%;
         margin: 30px auto;
+    }
+    .images-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        div{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 </style>
