@@ -42,9 +42,12 @@ header{
         @include my-flex;
         ul{
             @include my-flex;
+            padding-top: 15px;
             li{
                 list-style-type: none;
                 padding: 0 10px;
+                line-height: 120px;
+                z-index: 1;
                 a{
                     text-decoration: none;
                     text-transform: uppercase;
@@ -52,18 +55,16 @@ header{
                     font-weight: bold;
                     .choice{
                         position: relative;
-                        display: flex;
-                        justify-content: center;
-                        .active{
-                            color: $bg-button-standard;
-                            &::after{
-                                position: absolute;
-                                bottom: 0;
-                                content: '';
-                                width: 100%;
-                                height: 3px;
-                                background-color: $bg-button-standard;
-                            }
+                    }
+                    .active{
+                        color: $bg-button-standard;
+                        &::after{
+                            position: absolute;
+                            bottom: 8px;
+                            content: '';
+                            width: 100%;
+                            height: 3px;
+                            background-color: $bg-button-standard;
                         }
                     }
                 }
