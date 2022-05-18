@@ -1,18 +1,18 @@
 <template>
-<div class="image-container">
-    <div class="half-circle">
-        <svg class="half-circle-top" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="padding:0;" fill="rgba(240,237,230,1)"><path d="M0 0 C55 180 100 0 100 0 Z"></path></svg>
-        <svg class="half-circle-bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="padding:0;" fill="rgba(240,237,230,1)"><path d="M0 100 C40 0 60 0 100 100 Z"></path></svg>
+    <div class="image-container">
+        <div class="half-circle">
+            <svg class="half-circle-top" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="padding:0;" fill="rgba(240,237,230,1)"><path d="M0 0 C55 180 100 0 100 0 Z"></path></svg>
+            <svg class="half-circle-bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="padding:0;" fill="rgba(240,237,230,1)"><path d="M0 100 C40 0 60 0 100 100 Z"></path></svg>
+        </div>
+        <img :src="require('../assets/images/home-parallax-144609983.jpg')" alt="Home">
+        <div class="home text-center">
+            <h4>our home owners say</h4>
+            <hr>
+            <img :src="require('../assets/images/home-testimonial-84268399.jpg')" alt="Testimonial">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio ipsa veniam ratione sit tempore asperiores assumenda aliquam perferendis beatae.</p>
+            <span>harry smith - new home owner</span>
+        </div>
     </div>
-    <img :src="require('../assets/images/home-parallax-144609983.jpg')" alt="Home">
-    <div class="home text-center">
-        <h4>our home owners say</h4>
-        <hr>
-        <img :src="require('../assets/images/home-testimonial-84268399.jpg')" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio ipsa veniam ratione sit tempore asperiores assumenda aliquam perferendis beatae.</p>
-        <span>harry smith - new home owner</span>
-    </div>
-</div>
 </template>
 
 <script>
