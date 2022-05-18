@@ -7,3 +7,7 @@ $fa-font-path: './webfonts';
 @import '~@fortawesome/fontawesome-free/scss/brands.scss';
 
 @import './vars';
+
+body{
+    min-width: 1200px;
+}

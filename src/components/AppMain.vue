@@ -1,6 +1,7 @@
 <template>
     <main>
         <app-jumbotron/>
+        <app-specialist/>
         <app-results/>
         <app-explore/>
         <app-core/>
@@ -12,6 +13,7 @@
 
 <script>
 import AppJumbotron from './AppJumbotron.vue'
+import AppSpecialist from './AppSpecialist.vue'
 import AppResults from './AppResults.vue'
 import AppExplore from './AppExplore.vue'
 import AppCore from './AppCore.vue'
@@ -22,6 +24,7 @@ export default {
     name: 'AppMain',
     components:{
         AppJumbotron,
+        AppSpecialist,
         AppResults,
         AppExplore,
         AppCore,
