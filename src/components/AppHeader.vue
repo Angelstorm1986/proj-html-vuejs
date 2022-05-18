@@ -6,11 +6,7 @@
         <nav>
             <div>
                 <ul>
-                    <li v-for="(item, index) in navbar" :key="index">
-                        <a href="#">
-                            <div class="choice" :class="{ active : item.active }">{{item.text}}</div>
-                        </a>
-                    </li>
+                    <header-data v-for="(item, index) in navbar" :key="index" :text="item.text" :active="item.active"/>
                 </ul>
                 <button class="standard-button">get quote</button>
             </div>
@@ -20,8 +16,12 @@
 
 <script>
 import dati from "../navBar.json"
+import HeaderData from './HeaderData.vue'
 export default {
     name: 'AppHeader',
+    components:{
+        HeaderData
+    },
     data(){
         return{
             navbar: dati

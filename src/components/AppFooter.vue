@@ -59,12 +59,7 @@
                     <div class="mid-footer-contact col-3">
                         <h6>contact us today</h6>
                         <div class="contact">
-                            <p><i class="fa-solid fa-globe"></i>&nbsp;Corporate Location<br>1600 Amphitheatre Parkway<br>London WC1 1BA</p>
-                            <p><i class="fa-solid fa-house-chimney"></i>&nbsp;Residential Location<br>9521 Broadsberry Avenue<br>Paddington RC7 9ZA</p>
-                            <p><i class="fa-solid fa-phone-flip"></i>&nbsp;1.800.458.556 / 1.800.532.2112</p>
-                            <p><i class="fa-regular fa-envelope"></i>&nbsp;info@yourdomain.com</p>
-                            <p><i class="fa-regular fa-clock"></i>&nbsp;Monday - Friday: 9:00 AM - 6:00 PM</p>
-                            <p><i class="fa-regular fa-clock"></i>&nbsp;Saturday - Sunday: 9:00 AM - 12:00 PM</p>
+                            <footer-data v-for="(item, index) in itemContact" :key="index" :icon="item.icon" :title="item.title" :address="item.address" :town="item.town"/>
                         </div>
                     </div>
                     <div class="col-3">
@@ -92,8 +87,18 @@
 </template>
 
 <script>
+import dati from "../contactUs.json"
+import FooterData from './FooterData.vue'
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    components:{
+        FooterData
+    },
+    data(){
+        return{
+            itemContact: dati
+        }
+    }
 }
 </script>
 

@@ -1,0 +1,38 @@
+[
+    {
+        "icon": "fa-solid fa-globe",
+        "title": "Corporate Location",
+        "address": "1600 Amphitheatre Parkway",
+        "town": "London WC1 1BA"
+    },
+    {
+        "icon": "fa-solid fa-house-chimney",
+        "title": "Residential Location",
+        "address": "9521 Broadsberry Avenue",
+        "town": "Paddington RC7 9ZA"
+    },
+    {
+        "icon": "fa-solid fa-phone-flip",
+        "title": "1.800.458.556 / 1.800.532.2112",
+        "address": "",
+        "town": ""
+    },
+    {
+        "icon": "fa-regular fa-envelope",
+        "title": "info@yourdomain.com",
+        "address": "",
+        "town": ""
+    },
+    {
+        "icon": "fa-regular fa-clock",
+        "title": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "address": "",
+        "town": ""
+    },
+    {
+        "icon": "fa-regular fa-clock",
+        "title": "Saturday - Sunday: 9:00 AM - 12:00 PM",
+        "address": "",
+        "town": ""
+    }
+]
