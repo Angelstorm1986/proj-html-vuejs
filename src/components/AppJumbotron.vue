@@ -35,7 +35,8 @@ export default {
 @import '../style/vars';
 .container-jumbo{
     width: 100%;
-    height: 100vh;
+    height: calc(100% - 100px);
+    margin-top: 100px;
     .img-jumbo{
     position: relative;
     @include cover;
@@ -44,7 +45,7 @@ export default {
         }
         .demos{
             @include label-jumbo;
-            top: 15px;
+            top: 115px;
             right: 15px;
             .fa-box-archive{
                 font-size: 25px;
@@ -52,7 +53,7 @@ export default {
         }
         .sale{
             @include label-jumbo;
-            top: 85px;
+            top: 185px;
             right: 15px;
             .dollar{
                 color: $label-text;

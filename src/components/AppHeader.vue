@@ -35,6 +35,12 @@ export default {
 header{
     height: 100px;
     @include my-flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $bg-standard;
+    z-index: 1;
     .logo{
         margin-left: 50px;
     }

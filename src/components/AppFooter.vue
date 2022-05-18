@@ -223,7 +223,6 @@ export default {
     font-size: 10px;
     @include my-flex;
     padding: 0 20px;
-    position: relative;
     p{
         margin: 0;
     }
@@ -238,7 +237,7 @@ export default {
         }
     }
     .start{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         right: 5px;
         width: 40px;

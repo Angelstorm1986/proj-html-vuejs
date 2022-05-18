@@ -4,7 +4,7 @@
     align-items: center;
 }
 @mixin label-jumbo{
-    position: absolute;
+    position: fixed;
     width: 60px;
     height: 60px;
     padding: 5px;
@@ -12,6 +12,7 @@
     border-radius: 5px;
     text-align: center;
     text-transform: capitalize;
+    z-index: 1;
 }
 @mixin button-layout{
     text-transform: uppercase;

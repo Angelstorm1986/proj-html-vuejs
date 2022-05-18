@@ -50,7 +50,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../style/vars';
 section{
     background-color: $bg-standard;
